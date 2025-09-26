@@ -19,53 +19,58 @@ This project is a simple slot game implemented using HTML, CSS, and JavaScript. 
 To run the project locally, follow these steps:
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/simple-slot-game.git
-   ```
 
-````
+   ```bash
+   git clone https://github.com/pfdev2519/Sonic_SlotMachine.git
+   ```
 
 2. Navigate into the project directory:
 
    ```bash
-   cd simple-slot-game
+   cd Sonic_SlotMachine
    ```
 
 3. Open `index.html` in your preferred web browser.
 
-   Alternatively, you can serve the project using any local server setup, like:
-
-   ```bash
-   python -m http.server
-   ```
-
 ## How to Play
 
-1. **Start the Game**: Press the "Spin" button to start the slot machine.
-2. **Winning Condition**: If three matching icons appear on the slot reels, you win the round.
-3. **Coin System**: The game uses a virtual coin system. You'll start with a set number of coins, and each spin costs a certain amount. Winning the game rewards you with additional coins.
+**Start the Game**: Press the "Spin" button to start the slot machine.
 
-## Slot Machine Design
+✅ Winning Combinations:
 
-* The slot machine consists of three reels, each with icons such as:
+3× Sonic → +30 points
 
-  * **Sonic Coins**
-  * **Rings**
-  * **Chaos Emeralds**
-* Reels randomly display these icons on each spin, with sound effects triggered when you win.
+3× Tails → +25 points
 
-## Customization
+3× Jackpot → +150 points
 
-Feel free to modify the game by:
+1× Bar → +2 points
 
-* **Changing the theme**: Swap out the Sonic images and sounds for a different theme.
-* **Adjusting the probabilities**: Tweak the randomness to change how frequently certain items appear.
-* **Adding more functionality**: You could add a high score tracker, different spin animations, or more complex betting mechanics.
+2× Bar → +4 points
 
-## Known Issues
+3× Bar → +20 points
 
-* Mobile responsiveness: The game works better on desktop screens. A responsive version for mobile devices is a future goal.
-* Minor sound delay: On slower devices, sound effects may have a slight delay.
+❌ Losing Combinations:
+
+3× Robotnik → Lose 100 points (or reset to 0 if under 100)
+
+2× Robotnik + 1× Jackpot → Lose 100 points
+
+1× Robotnik + 2× Jackpot → Lose 100 points
+
+🎯 Multiplier Bonuses:
+
+2× Sonic + 1× Jackpot → Double score (×2)
+
+2× Tails + 1× Jackpot → Double score (×2)
+
+2× Bar + 1× Jackpot → Double score (×2)
+
+1× Sonic + 2× Jackpot → Quadruple score (×4)
+
+1× Tails + 2× Jackpot → Quadruple score (×4)
+
+1× Bar + 2× Jackpot → Quadruple score (×4)
 
 ## Contributing
 
@@ -77,9 +82,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Thank you for checking out the Simple Slot Game! Enjoy spinning those reels and may the Chaos Emeralds be in your favor!
-
-```
-
-```
-````
+Thank you for checking out the game! Enjoy spinning those reels and may the Chaos Emeralds be in your favor!
