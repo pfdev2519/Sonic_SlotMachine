@@ -1,0 +1,101 @@
+# General Operating System Files
+##############################
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Qt Build and IDE Files
+##########################
+# Ignore Qt's build directories (these can get quite large)
+/build/
+*.pro.user
+*.pro.user.*
+*.qmake.stash
+
+# Qt Creator specific
+*.user
+*.user.*
+*.pro.user
+*.pro.user.*
+*.moc
+
+# Ignore generated moc files and ui files
+*.moc
+*.ui.h
+*.ui
+*.qrc
+
+# Ignore generated qmake files
+Makefile
+Makefile.Debug
+Makefile.Release
+Makefile.shared
+
+# Ignore the output of the build process
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+
+# CMake or other build tool output
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Ignore Qt's ui and moc generated files
+ui_*.h
+moc_*.cpp
+
+# Virtual environment
+*_venv/
+.env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Website Project Files
+########################
+# Node.js/Frontend build tools
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Build artifacts for JS/CSS (e.g., from Webpack, Gulp, etc.)
+/dist/
+/build/
+/public/
+/*.log
+*.css.map
+*.js.map
+
+# Ignore IDE-specific files
+###########################
+.vscode/
+.idea/
+
+# Editor backups
+################
+*~
+*.swp
+
+# Temporary files
+################
+*.tmp
+*.bak
+*.swp
+
+# Project documentation
+################
+docs/
+data/
+design/
+qt/
