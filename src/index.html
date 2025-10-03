@@ -16,53 +16,64 @@
     <title>Slotgame Web Project</title>
   </head>
   <body>
-    <header>
-      <nav class="menu-bar">
-        <ul>
-          <li><a href="./pages/rules.html">Scoring Rules</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <aside class="side-bar">
-        <h1 class="geostar">
-          <span class="logo"> Spin</span><br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Zone
-        </h1>
-      </aside>
-      <section class="center">
-        <section id="score-panel" class="score-panel"></section>
-
-        <section class="slot">
-          <div class="reel"></div>
-          <div class="reel"></div>
-          <div class="reel"></div>
-        </section>
-
-        <section class="points-msg">
-          <h1 id="points" class="points"></h1>
-        </section>
-        <section class="btn-container">
-          <div class="btn-wrapper">
-            <p class="act">Press 🟡 to reset</p>
-            <button class="reset-btn" onclick="resetScore()">
-              <span class="back"></span>
-              <span class="front"></span>
-            </button>
+    <div id="loader" class="loader">
+      <div class="outerCircle backwards">
+        <div class="sonic inverse">
+          <div class="legs">
+            <span class="innerLegs">S</span>
           </div>
-          <div class="btn-wrapper">
-            <p class="act">Press 🔴 to start</p>
-            <button class="spin-btn" onclick="rollAll()">
-              <span class="back"></span>
-              <span class="front"></span>
-            </button>
-          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <header>
+        <nav class="menu-bar">
+          <ul>
+            <li><a href="./pages/rules.html">Scoring Rules</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <aside class="side-bar">
+          <h1 class="geostar">
+            <span class="logo"> Spin</span><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Zone
+          </h1>
+        </aside>
+        <section class="center">
+          <section id="score-panel" class="score-panel"></section>
+
+          <section class="slot">
+            <div class="reel"></div>
+            <div class="reel"></div>
+            <div class="reel"></div>
+          </section>
+
+          <section class="points-msg">
+            <h1 id="points" class="points"></h1>
+          </section>
+          <section class="btn-container">
+            <div class="btn-wrapper">
+              <p class="act">Press 🟡 to reset</p>
+              <button class="reset-btn" onclick="resetScore()">
+                <span class="back"></span>
+                <span class="front"></span>
+              </button>
+            </div>
+            <div class="btn-wrapper">
+              <p class="act">Press 🔴 to start</p>
+              <button class="spin-btn" onclick="rollAll()">
+                <span class="back"></span>
+                <span class="front"></span>
+              </button>
+            </div>
+          </section>
         </section>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2025 SpinZone</p>
-    </footer>
+      </main>
+      <footer>
+        <p>&copy; 2025 SpinZone</p>
+      </footer>
+    </div>
     <script src="script/script.js"></script>
   </body>
 </html>

@@ -1,3 +1,12 @@
+function loader() {
+  let loadTime = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("main-content").style.display = "block";
+}
+
 let totalScore = Number.parseInt(localStorage.getItem("score"))
   ? Number.parseInt(localStorage.getItem("score"))
   : Number(0);
@@ -166,5 +175,6 @@ function displayPoints(points) {
 }
 
 window.onload = function () {
+  loader();
   displayScore();
 };
